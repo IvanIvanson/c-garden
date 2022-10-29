@@ -43,6 +43,14 @@ body {
   padding-bottom: 22px;
   /* border: solid red; */
   background-color: #FCF9E8;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.wrapper .content .header .header-up {
+  position: fixed;
+  width: 100%;
 }
 
 .wrapper .content .header .header-upleft {
@@ -138,6 +146,14 @@ body {
   background: rgba(150, 180, 56, 0.7);
   padding-top: 18px;
   padding-bottom: 23px;
+  position: fixed;
+  width: 100%;
+  top: 71px;
+}
+
+.wrapper .content .shaddowHeader {
+  -webkit-box-shadow: inset 0 0 100px #cccccc;
+          box-shadow: inset 0 0 100px #cccccc;
 }
 
 @media (max-width: 1050px) {
@@ -254,7 +270,7 @@ body {
     top: -100px;
     left: 10px;
     opacity: 0;
-    z-index: -1;
+    z-index: 2;
     -webkit-transition: top .5s, opacity .7s;
     transition: top .5s, opacity .7s;
   }
@@ -270,7 +286,7 @@ body {
   .wrapper .content .header .menu-show {
     top: 70px;
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: top .5s, opacity .7s;
     transition: top .5s, opacity .7s;
     padding-left: 40px;
@@ -298,7 +314,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding-right: 40px;
-    z-index: 1;
+    z-index: 500;
   }
   .wrapper .content .header .block-icon425 .icon-phone {
     cursor: pointer;
@@ -309,9 +325,11 @@ body {
   .wrapper .content .header .block-icon425 .icon-menu {
     line-height: 1rem;
     cursor: pointer;
+    z-index: 5000;
   }
   .wrapper .content .header-bottom {
     background-color: transparent;
+    top: 0;
   }
 }
 
@@ -324,7 +342,7 @@ body {
     top: -100px;
     left: 10px;
     opacity: 0;
-    z-index: -1;
+    z-index: 1;
     -webkit-transition: top .5s, opacity .7s;
     transition: top .5s, opacity .7s;
   }
@@ -340,7 +358,7 @@ body {
   .wrapper .content .header .menu-show {
     top: 70px;
     opacity: 1;
-    z-index: 1;
+    z-index: 3;
     -webkit-transition: top .5s, opacity .7s;
     transition: top .5s, opacity .7s;
     opacity: 0.8;
@@ -464,13 +482,14 @@ body {
   background-image: url("./image/house.png");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: -15px;
+  margin-top: 135px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  z-index: 2;
 }
 
 .wrapper .content .container .winter-summer {
@@ -655,7 +674,7 @@ body {
     height: 526px;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: -10px;
+    margin-top: 130px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -839,7 +858,8 @@ body {
         -ms-flex-order: 2;
             order: 2;
     background-position: center;
-    margin-top: -80px;
+    margin-top: -10px;
+    z-index: 0;
   }
 }
 
@@ -933,7 +953,7 @@ body {
         -ms-flex-order: 1;
             order: 1;
     background-position: center;
-    margin-top: -40px;
+    margin-top: 30px;
   }
 }
 

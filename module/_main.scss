@@ -10,6 +10,7 @@ padding-right: $main-padding;
 
    div {
   flex: 1;
+  
 }
 .clin-left{
   background-color:  #FCF9E8;
@@ -73,17 +74,14 @@ height: 626px;
 background-image: url('./image/house.png');
 background-repeat: no-repeat;
 background-size: contain;
-margin-top: -15px;
+margin-top: 135px;
 display: flex;
 justify-content: end;
-// img{
-//     display: inline;
-//     max-width: 814px;
-// }
+z-index: 2;
 }
 .winter-summer{
   // background-color: white;
-  
+ 
   width: 100%;
   h1{
     text-align: center;
@@ -104,6 +102,8 @@ display: flex;
 flex-wrap: wrap;
   align-items: stretch;
   gap:10px;
+ 
+
   .winter-item{
 // border: solid blue;
 gap:20px;
@@ -246,7 +246,7 @@ height: 526px;
 // background-image: url(./image/house.png);
 background-repeat: no-repeat;
 background-size: contain;
-margin-top: -10px;
+margin-top: 130px;
 display: flex;
 justify-content: end;
 // img{
@@ -423,13 +423,8 @@ justify-content: center;
 order: 2;
 // border:solid red;
 background-position: center;
-margin-top: -80px;
-// img{
-//     display: inline;
-//     // width: 313px;
-// border:solid rgb(47, 0, 255);
-
-// }
+margin-top: -10px;
+z-index:0;
 }
 }
 }
@@ -514,7 +509,7 @@ justify-content: center;
 order: 1;
 // border:solid red;
 background-position: center;
-margin-top: -40px;
+margin-top: 30px;
 // img{
 //     display: inline;
 //     // width: 313px;
