@@ -461,7 +461,7 @@ body {
   max-width: 814px;
   min-height: 222px;
   height: 626px;
-  background-image: url(./image/house.png);
+  background-image: url("./image/house.png");
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: -15px;
@@ -653,7 +653,6 @@ body {
     max-width: 814px;
     min-height: 222px;
     height: 526px;
-    background-image: url(./image/house.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: -10px;
