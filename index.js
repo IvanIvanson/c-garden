@@ -31,3 +31,8 @@ window.onload = function () {
     });
 
 }
+
+window.addEventListener("load", () => {
+        document.getElementById("clin-right").style.display = "flex";
+        document.getElementById("loader").style.display = "none";
+      });
